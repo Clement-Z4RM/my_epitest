@@ -14,7 +14,7 @@ docker build -t epitest .
 Make a symbolic link to `run.sh` in a folder of your PATH (or make an alias)
 ```bash
 cd ~/.local/bin/
-ln -s <my_epitest location>/run.sh epitesh
+ln -s <my_epitest location>/run.sh epitest
 ```
 
 Use it
