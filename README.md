@@ -21,3 +21,5 @@ Use it
 ```bash
 epitest
 ```
+
+To have a custom hostname, set the `ET_HOSTNAME` environment variable
