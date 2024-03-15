@@ -23,3 +23,4 @@ epitest
 ```
 
 To have a custom hostname, set the `ET_HOSTNAME` environment variable
+To change the prompt, set the `ET_PROMPT` environment variable (`fish_config prompt` to list them)
