@@ -25,8 +25,8 @@ if [ -f ~/.config/fish/config.fish ]; then
   docker cp -q ~/.config/fish/config.fish $CONTAINER_NAME:/home/$ET_HOSTNAME/.config/fish/config.fish
 
   docker exec -it $CONTAINER_NAME fish -C "source /home/$ET_HOSTNAME/.config/fish/config.fish && fish_config prompt choose $ET_PROMPT"
+else
+  docker exec -it $CONTAINER_NAME fish -C "fish_config prompt choose $ET_PROMPT"
 fi
-
-docker exec -it $CONTAINER_NAME fish -C "fish_config prompt choose $ET_PROMPT"
 
 docker stop $CONTAINER_NAME > /dev/null &
